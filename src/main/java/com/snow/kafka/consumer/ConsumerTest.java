@@ -38,6 +38,7 @@ public class ConsumerTest {
         properties.put("enable.auto.commit", "true");
         properties.put("auto.commit.interval.ms", "60000");
         properties.put("session.timeout.ms", "30000");
+        properties.put("max.poll.records", "10000"); // 控制最大poll消息数量
         properties.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
         properties.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
         return properties;
@@ -70,6 +71,7 @@ public class ConsumerTest {
         properties.put("enable.auto.commit", "false");
         properties.put("auto.commit.interval.ms", "60000");
         properties.put("session.timeout.ms", "30000");
+        properties.put("max.poll.records", "10000"); // 控制最大poll消息数量
         properties.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
         properties.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
         return properties;
