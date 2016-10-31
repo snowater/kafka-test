@@ -76,6 +76,11 @@
 			<artifactId>fastjson</artifactId>
 			<version>1.2.18</version>
 		</dependency>
+		<dependency>
+		    <groupId>org.apache.hadoop</groupId>
+		    <artifactId>hadoop-client</artifactId>
+		    <version>2.7.2</version>
+		</dependency>
 	</dependencies>
 
 	<build>
